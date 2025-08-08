@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Portfolio_Project.css" />
+    <script
+      src="https://kit.fontawesome.com/74ea9753e4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .ml11 {
+        font-weight: 700;
+        font-size: 3.5em;
+      }
+    
+      .ml11 .text-wrapper {
+        position: relative;
+        display: inline-block;
+        padding-top: 0.1em;
+        padding-right: 0.05em;
+        padding-bottom: 0.15em;
+      }
+    
+      .ml11 .line {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color: #fff;
+        transform-origin: 0 50%;
+      }
+    
+      .ml11 .line1 { 
+        top: 0; 
+        left: 0;
+      }
+    
+      .ml11 .letter {
+        display: inline-block;
+        line-height: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav class="nav-container">
+          <span class="logo"><span>W</span>elcome!</span>
+          <!-- <img src="images/logo.png" class="logo" alt="" /> -->
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-circle-xmark" onClick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-solid fa-bars" onClick="openMenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p style="color:rgb(4, 86, 240)"></p>
+          <div class="namecontainer">
+          <h1>Hi, I'm 
+              <h1 class="ml11">
+                  <span class="text-wrapper">
+                      <span class="line line1"></span>
+                      <span class="letters">Mahak Sizariya </span>
+                  </span>
+              </h1><br/>
+            
+              <br>
+              <h1>From Jhansi</h1>
+            </div>
+          </h1>
+          <img src="mypic.jpg" class="imgclass">
+      </div>
+      
+        </div>
+      </div>
+    </div>
+
+    <!-- about mhk-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="work-1-.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am a dedicated MCA student pursuing  From GLA University , Mathura</p>
+
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Developer</span><br />HTML-CSS-JavaScript-PHP-SQL</li>
+                <li><span>Data Analyst</span><br />Begginer of PowerBiSQL-Tableau</li>
+                <li><span>  Programming Language</span><br />Java</li>
+                <li>
+                  <span></span><br />
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2025-Web Developer Intership</span><br />Web developer Intership at Web Smile India, where I designed and developed a Courier Management Software using core web development technologies. Gained hands-on experience in frontend & backend integration, database management, and real-time user interface design.
+                </li>
+                <li>
+                  <span>Teamlead</span><br />I am a teamlead member of abacus club in Gla University
+                </li>
+              </ul>
+            </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------Services------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Courier Management Software / Fitness Tracker / Bussiness Frontend Website
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>AI </h2>
+            <p>
+              Chatbot "ma'chen"
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>Portfolio</h2>
+            <p>
+              Personl -----------portfolio---------------
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------portfolio--------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" alt="image" />
+            <div class="layer">
+              <h3>Chatbot</h3>
+              <p>
+              .
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.jpg" alt="image" />
+            <div class="layer">
+              <h3>Fitness Tracker </h3>
+              <p>
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.jpg" alt="image" />
+            <div class="layer">
+              <h3>Courier Software</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- ---------------contact---------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="Contact-btn">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>mahaksizariya@gmail.com</p>
+            <p><i class="fas fas fas fa-phone-square"></i>9118415434</p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fa-brands fab fa-twitter-square"></i></a>
+              <a href="#"
+                ><i class="fa-brands fab fab fa-instagram-square"></i
+              ></a>
+              <a href="#"><i class="fa-brands fab fab fa-linkedin"></i></a>
+            </div>
+            <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <inputtype="email"
+              name="Email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="Message"
+              rows="6"
+              placeholder="Your Message"
+            ></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="copyright">
+      <p>
+        Copyright © mahak. Made with <i class="fas fas fa-heart"></i> Love
+      </p>
+
+      <P></P>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabName) {
+      for (tabLink of tabLinks) {
+        tabLink.classList.remove("active-link");
+      }
+      for (tabContent of tabContents) {
+        tabContent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+
+      document.getElementById(tabName).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sideMenu = document.getElementById("sideMenu");
+    function openMenu() {
+      sideMenu.style.right = "0";
+    }
+    var sideMenu = document.getElementById("sideMenu");
+    function closeMenu() {
+      sideMenu.style.right = "-200px";
+    }
+  </script>
+
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzJclpM88ssSzkkajpH8108xiKhRFxrVO03wF3bsTXPQItWmMRooea9KYVRGL6BPnzdDA/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const msg = document.getElementById("msg");
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      fetch(scriptURL, { method: "POST", body: new FormData(form) })
+        .then((response) => {
+          msg.innerHTML = "Message sent successfully ";
+          setTimeout(function () {
+            msg.innerHTML = "";
+          }, 3000);
+          form.reset();
+        })
+        .catch((error) => console.error("Error!", error.message));
+    });
+  </script>
+  <script src="Portfolio_Project.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script>
+  // Wrap every letter in a span
+  var textWrapper = document.querySelector('.ml11 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml11 .line',
+      scaleY: [0,1],
+      opacity: [0.5,1],
+      easing: "easeOutExpo",
+      duration: 700
+    })
+    .add({
+      targets: '.ml11 .line',
+      translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+      easing: "easeOutExpo",
+      duration: 700,
+      delay: 100
+    }).add({
+      targets: '.ml11 .letter',
+      opacity: [0,1],
+      easing: "easeOutExpo",
+      duration: 600,
+      offset: '-=775',
+      delay: (el, i) => 34 * (i+1)
+    }).add({
+      targets: '.ml11',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
+
+
+
+
+    // targets: '.ml11',
+    //   opacity: 0,
+    //   duration: 1000,
+    //   easing: "easeOutExpo",
+    //   delay: 1000
+    // });
+</script>
+</body>
+</html>
